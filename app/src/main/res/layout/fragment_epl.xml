@@ -5,9 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="22dp"
+        android:id="@+id/rvEPL"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EPL"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
