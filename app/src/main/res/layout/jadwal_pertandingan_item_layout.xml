@@ -31,19 +31,18 @@
             android:gravity="center"
             android:paddingVertical="4dp">
 
-            <!-- Tim 1 (kiri) -->
+            <ImageView
+                android:id="@+id/ivHomeTeam"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Logo Real Betis" />
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end|center_vertical"
                 android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/ivHomeTeam"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:contentDescription="Logo Real Betis" />
 
                 <TextView
                     android:id="@+id/tvHomeTeam"
@@ -55,12 +54,10 @@
                     android:textSize="16sp" />
             </LinearLayout>
 
-            <!-- Spacer -->
             <View
                 android:layout_width="32dp"
                 android:layout_height="wrap_content" />
 
-            <!-- Tim 2 (kanan) -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -76,13 +73,13 @@
                     android:textColor="#000000"
                     android:textSize="16sp"
                     android:layout_marginEnd="8dp" />
-
-                <ImageView
-                    android:id="@+id/ivAwayTeam"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:contentDescription="Logo Osasuna" />
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivAwayTeam"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Logo Osasuna" />
         </LinearLayout>
 
     </LinearLayout>
